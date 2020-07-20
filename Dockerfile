@@ -1,4 +1,4 @@
-FROM jetbrains/teamcity-agent
+FROM jetbrains/teamcity-agent:latest
 USER root
 RUN apt update && apt install wget && \
      wget -c https://download.java.net/java/ga/jdk11/openjdk-11_linux-x64_bin.tar.gz && \
