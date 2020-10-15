@@ -1,6 +1,6 @@
 FROM jetbrains/teamcity-agent:latest
 USER root
-RUN apt update && apt install wget && apt install -y nodejs && \
+RUN apt update && apt upgrade && apt install wget && apt install -y npm && \
     wget -c https://download.java.net/java/ga/jdk11/openjdk-11_linux-x64_bin.tar.gz && \
     tar -xvf openjdk-11_linux-x64_bin.tar.gz && \
     rm openjdk-11_linux-x64_bin.tar.gz && \
