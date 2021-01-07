@@ -1,4 +1,4 @@
-FROM jetbrains/teamcity-agent:2020.1.5
+FROM jetbrains/teamcity-agent:2020.2.1
 USER root
 RUN apt update && apt install wget && \
     wget https://github.com/github-release/github-release/releases/download/v0.9.0/linux-amd64-github-release.bz2 && \
